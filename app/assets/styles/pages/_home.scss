@@ -1,3 +1,47 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+.hero {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  color: var(--color-light);
+
+  &__bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-color: #80a3db;
+  }
+
+  &__content {
+    opacity: 0;
+    margin-top: 10rem;
+    animation: 1s slideFadeIn 1s forwards;
+  }
+
+  & h1 {
+    font: bold 6rem 'Open Sans', sans-serif;
+    letter-spacing: 0.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  & h3 {
+    font: normal 2.8rem 'Open Sans', sans-serif;
+    letter-spacing: 0.2rem;
+
+    margin-bottom: 4rem;
+  }
+
+  & .btn {
+    padding: 2rem 4.6rem;
+    color: var(--color-light);
+    letter-spacing: 2px;
+  }
+}

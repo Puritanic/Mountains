@@ -195,11 +195,20 @@ textarea {
    ========================================================================== */
 
 body {
-  padding: 3rem;
   box-sizing: border-box;
-  background-color: $light-grey;
 
   @include respond(tab-port) {
     padding: 0;
   }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 8rem;
+}
+
+a {
+  text-decoration: none;
 }
