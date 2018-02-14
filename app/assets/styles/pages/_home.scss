@@ -45,3 +45,25 @@
     letter-spacing: 2px;
   }
 }
+
+section:not(.hero):nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.packages {
+  & .grid li {
+    padding: 5rem;
+    flex-basis: 50%;
+    text-align: center;
+
+    & i {
+      color: #8c9eff;
+      font-size: 6rem;
+    }
+
+    & h4 {
+      font-size: 4rem;
+      margin: 3rem 0;
+    }
+  }
+}

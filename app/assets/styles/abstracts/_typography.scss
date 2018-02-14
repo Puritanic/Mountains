@@ -79,3 +79,10 @@ $font-family-second: $font-family-open;
     }
   }
 }
+
+.title {
+  text-transform: uppercase;
+  font: bold 3.2rem 'Open Sans', sans-serif;
+  margin-bottom: 3rem;
+  text-align: center;
+}
