@@ -14,9 +14,25 @@
 
   .small {
     flex-basis: 30%;
+
+    @include respond(tab-land) {
+      flex-basis: 50%;
+    }
+
+    @include respond(tab-port) {
+      flex-basis: 100%;
+    }
   }
 
   .large {
     flex-basis: 70%;
+
+    @include respond(tab-land) {
+      flex-basis: 50%;
+    }
+
+    @include respond(tab-port) {
+      flex-basis: 100%;
+    }
   }
 }

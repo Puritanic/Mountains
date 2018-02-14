@@ -9,6 +9,10 @@
   min-height: 100vh;
   color: var(--color-light);
 
+  @include respond(tab-port) {
+    min-height: 60rem;
+  }
+
   &__bg-img {
     position: absolute;
     left: 0;
@@ -30,19 +34,30 @@
     font: bold 6rem 'Open Sans', sans-serif;
     letter-spacing: 0.4rem;
     margin-bottom: 1.5rem;
+
+    @include respond(tab-port) {
+      font-size: 4.5rem;
+    }
   }
 
   & h3 {
     font: normal 2.8rem 'Open Sans', sans-serif;
     letter-spacing: 0.2rem;
-
     margin-bottom: 4rem;
+
+    @include respond(tab-port) {
+      font-size: 2.4rem;
+    }
   }
 
   & .btn {
     padding: 2rem 4.6rem;
     color: var(--color-light);
     letter-spacing: 2px;
+
+    @include respond(tab-port) {
+      padding: 1.5rem 4rem;
+    }
   }
 }
 
@@ -55,6 +70,11 @@ section:not(.hero):nth-child(even) {
     padding: 5rem;
     flex-basis: 50%;
     text-align: center;
+
+    @include respond(tab-port) {
+      flex-basis: 100%;
+      padding: 2rem;
+    }
 
     & i {
       color: #8c9eff;
@@ -74,6 +94,16 @@ section:not(.hero):nth-child(even) {
     font-weight: 300;
     line-height: 1.5;
     margin: 4rem 0 2.5rem;
+
+    @include respond(tab-port) {
+      font-size: 1.8rem;
+      margin: 1.5rem 0;
+    }
+  }
+  @include respond(tab-port) {
+    .author {
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -94,5 +124,10 @@ section:not(.hero):nth-child(even) {
     flex: 1;
     border-radius: 3px;
     border: none;
+
+    @include respond(tab-land) {
+      flex-basis: 100%;
+      margin: 0 0 2rem 0;
+    }
   }
 }

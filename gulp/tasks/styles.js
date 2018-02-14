@@ -44,7 +44,6 @@ gulp.task('styles', () =>
       require('postcss-cssnext')(), // http://cssnext.io/features/
       rucksackCss(), // http://simplaio.github.io/rucksack/docs/#
       require('postcss-nesting'),
-      require('css-mqpacker')({ sort: true }),
       require('postcss-reporter')()
     ]))
     .pipe($.sourcemaps.write('./'))
